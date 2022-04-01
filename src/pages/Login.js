@@ -23,16 +23,14 @@ class Login extends Component {
 
   enableButton = () => {
     const { email, password } = this.state;
-    const minPasswordChar = 6;
-    if (email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)
-      && password.length >= minPasswordChar) {
-      this.setState({
-        disabled: false,
-      });
+    const number = 5;
+    const checkPassword = password.length > number;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const checkedEmail = emailRegex.test(email);
+    if (checkedEmail && checkPassword) {
+      this.setState({ disabled: false });
     } else {
-      this.setState({
-        disabled: true,
-      });
+      this.setState({ disabled: true });
     }
   }
 
