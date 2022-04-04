@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchAPI } from '../actions';
+import Table from '../components/Table';
 
 class Wallet extends React.Component {
   componentDidMount() {
@@ -29,10 +30,10 @@ class Wallet extends React.Component {
             Valor
             <input type="text" id="value" data-testid="value-input" />
           </label>
-          <labe htmlFor="description">
+          <label htmlFor="description">
             Descrição
             <input type="text" data-testid="description-input" />
-          </labe>
+          </label>
           <label htmlFor="currency">
             Moeda
             <select id="currency">
@@ -61,6 +62,9 @@ class Wallet extends React.Component {
               <option>Saúde</option>
             </select>
           </label>
+        </div>
+        <div>
+          <Table />
         </div>
       </>
     );
