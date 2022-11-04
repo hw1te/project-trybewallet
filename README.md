@@ -20,7 +20,7 @@ This is a **React** project where I used **Redux** concepts like:
 ## How to use ?
 
 After cloning the repository, you should:
-- Download the repository:
+- Download the dependencies:
   - `npm install`
 - Initialize the project:
   - `npm start`
