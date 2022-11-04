@@ -8,8 +8,8 @@ import * as serviceWorker from './serviceWorker';
 import store from './store';
 
 ReactDOM.render(
-  <HashRouter basename={process.env.PUBLIC_URL}>
-    <Provider store={store}>
+  <HashRouter basename={ process.env.PUBLIC_URL }>
+    <Provider store={ store }>
       <App />
     </Provider>
   </HashRouter>,
