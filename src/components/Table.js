@@ -11,13 +11,11 @@ class Table extends Component {
     const { expenses } = this.props;
     return (
       <table>
-        <div>
-          <tr>
-            {tableHeaders.map((tableHeader) => (
-              <th key={tableHeader}>{tableHeader}</th>
-            ))}
-          </tr>
-        </div>
+        <tr>
+          {tableHeaders.map((tableHeader) => (
+            <th key={tableHeader}>{tableHeader}</th>
+          ))}
+        </tr>
         {expenses.map((expense) => {
           const { description, tag, method, value, id } = expense;
           const number = Number(expense.value)
