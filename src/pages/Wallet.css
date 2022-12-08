@@ -1,0 +1,16 @@
+:root {
+    --light-color: rgb(233, 228, 221);
+    --dark-color: rgb(22, 27, 34);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wallet-container {
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--dark-color);
+}

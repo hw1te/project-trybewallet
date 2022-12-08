@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { addUser } from '../actions/index';
+import './Login.css'
 
 // emailRegex: https://www.w3schools.com/jsref/jsref_regexp_test.asp
 class Login extends Component {
@@ -46,29 +47,35 @@ class Login extends Component {
   render() {
     const { disabled, password, email } = this.state;
     return (
-      <>
-        <input
-          type="email"
-          name="email"
-          data-testid="email-input"
-          value={ email }
-          onChange={ this.handleChange }
-        />
-        <input
-          type="password"
-          name="password"
-          value={ password }
-          data-testid="password-input"
-          onChange={ this.handleChange }
-        />
-        <button
-          type="button"
-          disabled={ disabled }
-          onClick={ this.handleClick }
-        >
-          Entrar
-        </button>
-      </>
+      <div className="login-container">
+        <div className="login-body">
+          <h1>Trybewallet</h1>
+          <input
+            className="login-input"
+            type="email"
+            name="email"
+            data-testid="email-input"
+            value={email}
+            onChange={this.handleChange}
+          />
+          <input
+            className="login-input"
+            type="password"
+            name="password"
+            value={password}
+            data-testid="password-input"
+            onChange={this.handleChange}
+          />
+          <button
+            className="login-button"
+            type="button"
+            disabled={disabled}
+            onClick={this.handleClick}
+          >
+            Entrar
+          </button>
+        </div>
+      </div>
     );
   }
 }

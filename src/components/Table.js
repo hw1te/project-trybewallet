@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import './Table.css'
 
 class Table extends Component {
   render() {
@@ -10,29 +11,32 @@ class Table extends Component {
     const { expenses } = this.props;
     return (
       <table>
-        <tr>
-          {tableHeaders.map((tableHeader) => (
-            <th key={ tableHeader }>{ tableHeader }</th>
-          ))}
-        </tr>
+        <div>
+          <tr>
+            {tableHeaders.map((tableHeader) => (
+              <th key={tableHeader}>{tableHeader}</th>
+            ))}
+          </tr>
+        </div>
         {expenses.map((expense) => {
           const { description, tag, method, value, id } = expense;
           const number = Number(expense.value)
-          * Number(expense.exchangeRates[expense.currency].ask);
+            * Number(expense.exchangeRates[expense.currency].ask);
           return (
-            <tr key={ id }>
-              <td>{ description }</td>
-              <td>{ tag }</td>
-              <td>{ method }</td>
-              <td>{ Number(value).toFixed(2) }</td>
+            <tr key={id}>
+              <td>{description}</td>
+              <td>{tag}</td>
+              <td>{method}</td>
+              <td>{Number(value).toFixed(2)}</td>
               {/* Usei para o split https://github.com/tryber/sd-019-b-project-trybewallet/pull/85/commits/8761387cdb8ee06b0e7664765701d07f09925c89 */}
-              <td>{ expense.exchangeRates[expense.currency].name.split('/')[0] }</td>
+              < td > {expense.exchangeRates[expense.currency].name.split('/')[0]}</td >
               <td>{Number(expense.exchangeRates[expense.currency].ask).toFixed(2)}</td>
-              <td>{ number.toFixed(2) }</td>
+              <td>{number.toFixed(2)}</td>
               <td>Real</td>
-            </tr>
+            </tr >
           );
-        })}
+        })
+        }
       </table>
     );
   }
