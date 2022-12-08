@@ -4,7 +4,7 @@ A digital wallet where you can register and control your expenditure with a curr
 
 The main currency considered here is the Brazilian Real, all the values are converted using it as the source.
 
-[GitHub Page](https://hw1te.github.io/projeto-trybewallet/)
+[GitHub Page](http://project.trybewallet.com/)
 
 :no_entry: **This project will be further modified to add new functions** :no_entry:
 
