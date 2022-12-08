@@ -60,7 +60,7 @@ body {
 .header-top-paragraphs {
     width: 8%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .header-bottom {
