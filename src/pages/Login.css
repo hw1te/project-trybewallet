@@ -4,7 +4,10 @@
 }
 
 .login-container {
-    background-color: rgb(22, 27, 34);
+    background-image: url('World Map.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -20,13 +23,13 @@
     flex-direction: column;
     align-items: center;
     border-radius: 1rem;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .login-body h1 {
     color: white;
     margin: 2rem;
-    text-shadow: 3px 4px black;
+    text-shadow: 4px 5px black;
 }
 
 .login-input {
@@ -47,6 +50,7 @@
 }
 
 .login-button:disabled {
+    color: var(--light-color);
     cursor: not-allowed;
 }
 

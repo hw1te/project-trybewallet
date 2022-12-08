@@ -68,7 +68,7 @@ class Wallet extends React.Component {
         <div className="header">
           <div className="header-top">
             <div className="header-top-user">
-              <img src={userImg} width="25px" />
+              <img alt="user icon" src={userImg} width="25px" />
               User:
               {' '}
               <h3 data-testid="email-field">
@@ -76,7 +76,7 @@ class Wallet extends React.Component {
               </h3>
             </div>
             <div className="header-top-paragraphs">
-              <img src={dollarImg} width="25px" />
+              <img alt="dollar bill" src={dollarImg} width="25px" />
               <p data-testid="total-field">{totalValue}</p>
               <p data-testid="header-currency-field">BRL</p>
             </div>

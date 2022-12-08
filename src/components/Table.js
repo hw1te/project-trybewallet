@@ -7,7 +7,9 @@ class Table extends Component {
   render() {
     const tableHeaders = ['Descrição', 'Tag', 'Método de pagamento',
       'Valor', 'Moeda', 'Câmbio utilizado', 'Valor convertido',
-      'Moeda de conversão', 'Editar/Excluir'];
+      'Moeda de conversão'];
+    /* 'Editar/Excluir'  
+    ## Retornar para a const tableHeaders quando a função de editar e excluir for implementada*/
     const { expenses } = this.props;
     return (
       <table>
