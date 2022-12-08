@@ -38,7 +38,7 @@ body {
 .header-top {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin: 1rem;
 }
@@ -48,6 +48,13 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 300px;
+}
+
+.header-top-title {
+    margin-right: 6.5rem;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px black;
 }
 
 .header-top-paragraphs {

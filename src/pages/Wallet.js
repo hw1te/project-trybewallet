@@ -75,6 +75,9 @@ class Wallet extends React.Component {
                 {userEmail}
               </h3>
             </div>
+            <div>
+              <h1 className="header-top-title">Trybewallet</h1>
+            </div>
             <div className="header-top-paragraphs">
               <img alt="dollar bill" src={dollarImg} width="25px" />
               <p data-testid="total-field">{totalValue}</p>
